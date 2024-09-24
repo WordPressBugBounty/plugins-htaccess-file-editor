@@ -1,0 +1,29 @@
+= 1.0.17 - 21/08/2024 =
+* Fixed: Compatibility with WordPress v6.6
+
+= 1.0.14 - 12/06/2022 =
+* Fixed: Minor issue fixed
+
+= 1.0.13 - 10/05/2022 =
+* Version compatibility tested
+
+= 1.0.10 - 28/01/2022 =
+* WordPress 5.9 version tested
+
+= 1.0.6 - 08/03/2021 =
+* Version tested
+
+= 1.0.5 - 16/08/2020 =
+* Version tested
+
+= 1.0.4 - 20/02/2020 =
+* Version tested
+
+= 1.0.3 - 21/07/2019 =
+* Minor issue fixed & dashboard widget added
+
+= 1.0.1 - 05/03/2018 =
+* Warning fixed
+
+= 1.0.0 =
+* Initial Release
