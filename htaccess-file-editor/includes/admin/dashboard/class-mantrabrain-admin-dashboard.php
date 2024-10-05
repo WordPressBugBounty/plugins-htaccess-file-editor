@@ -106,7 +106,7 @@ if ( ! class_exists( 'Mantrabrain_Admin_Dashboard' ) ) {
 
 				$url_index++;
 
-				echo '<a href="' . $url_content['url'] . '" target="_blank">';
+				echo '<a href="' . esc_url( $url_content['url'] ) . '" target="_blank">';
 
 				echo esc_html( $url_content['text'] );
 
@@ -127,4 +127,3 @@ if ( ! class_exists( 'Mantrabrain_Admin_Dashboard' ) ) {
 		add_action( 'wp_dashboard_setup', 'Mantrabrain_Admin_Dashboard::dashboard_widget_setup' );
 	}
 }
-

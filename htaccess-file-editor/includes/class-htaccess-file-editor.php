@@ -55,7 +55,7 @@ final class Htaccess_File_Editor {
 	 * @since 1.0.0
 	 */
 	public function __clone() {
-		_doing_it_wrong( __FUNCTION__, __( 'Cloning is forbidden.', 'htaccess-file-editor' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Cloning is forbidden.', 'htaccess-file-editor' ), '1.0.0' );
 	}
 
 	/**
@@ -64,7 +64,7 @@ final class Htaccess_File_Editor {
 	 * @since 1.0.0
 	 */
 	public function __wakeup() {
-		_doing_it_wrong( __FUNCTION__, __( 'Unserializing instances of this class is forbidden.', 'htaccess-file-editor' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, esc_html__( 'Unserializing instances of this class is forbidden.', 'htaccess-file-editor' ), '1.0.0' );
 	}
 
 	/**
@@ -152,12 +152,10 @@ final class Htaccess_File_Editor {
 			return;
 		}
 
-		include_once HTACCESS_FILE_EDITOR_ABSPATH . '/includes/class-htaccess-file-editor-ebwp-notice.php';
 		include_once HTACCESS_FILE_EDITOR_ABSPATH . '/includes/admin/dashboard/class-mantrabrain-admin-dashboard.php';
 		include_once HTACCESS_FILE_EDITOR_ABSPATH . '/includes/class-htaccess-file-editor-actions.php';
 		include_once HTACCESS_FILE_EDITOR_ABSPATH . '/includes/functions.php';
 		include_once HTACCESS_FILE_EDITOR_ABSPATH . '/includes/class-htaccess-file-editor-hooks.php';
-
 	}
 
 

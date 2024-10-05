@@ -10,7 +10,7 @@ if (!current_user_can('activate_plugins')) {
 ?>
     <div class="wrap">
         <h2 class="htaccess-file-editor-title"
-            style="padding-left:50px"><?php __('Htaccess File Editor -', 'htaccess-file-editor'); ?><?php _e('Backup', 'htaccess-file-editor'); ?></h2>
+            style="padding-left:50px"><?php esc_html__('Htaccess File Editor -', 'htaccess-file-editor'); ?><?php esc_html_e('Backup', 'htaccess-file-editor'); ?></h2>
         <?php
         //============================ Restore Backup ===================================
         if (!empty($_POST['submit']) && !empty($_POST['restore_backup']) && check_admin_referer('htaccess_file_editor_restoreb', 'htaccess_file_editor_restoreb')) {
