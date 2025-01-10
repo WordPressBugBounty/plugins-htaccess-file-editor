@@ -1,5 +1,7 @@
 <?php
-if (file_exists(ABSPATH . 'wp-content/htaccess.backup')) {
+$file_name = get_option('htaccess_file_editor_backup_name');
+
+if ($file_name && file_exists(ABSPATH . 'wp-content/' . $file_name)) {
     echo '<div class="postbox htaccess-file-editor-box" style="background: #FFEECE;">';
     ?>
     <form method="post"

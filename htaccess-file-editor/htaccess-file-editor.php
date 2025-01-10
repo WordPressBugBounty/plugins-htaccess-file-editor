@@ -3,12 +3,12 @@
 Plugin Name: Htaccess File Editor
 Plugin URI: https://wpchill.com/
 Description: Simple editor for htaccess file without using FTP client.
-Version: 1.0.19
+Version: 1.0.20
 Text Domain: htaccess-file-editor
 Author: WPChill
 Author URI: https://wpchill.com/
 Requires at least: 3.0.0
-Tested up to: 6.6
+Tested up to: 6.7
 License: GPLv2 or later
 * Copyright 2024            WPChill             heyyy@wpchill.com
 *
@@ -32,33 +32,33 @@ License: GPLv2 or later
 * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly.
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
 }
 // Define HTACCESS_FILE_EDITOR_PLUGIN_FILE.
-if (!defined('HTACCESS_FILE_EDITOR_FILE')) {
-    define('HTACCESS_FILE_EDITOR_FILE', __FILE__);
+if ( ! defined( 'HTACCESS_FILE_EDITOR_FILE' ) ) {
+	define( 'HTACCESS_FILE_EDITOR_FILE', __FILE__ );
 }
 
 // Define HTACCESS_FILE_EDITOR_VERSION.
-if (!defined('HTACCESS_FILE_EDITOR_VERSION')) {
-    define('HTACCESS_FILE_EDITOR_VERSION', '1.0.17');
+if ( ! defined( 'HTACCESS_FILE_EDITOR_VERSION' ) ) {
+	define( 'HTACCESS_FILE_EDITOR_VERSION', '1.0.20' );
 }
 
 // Define HTACCESS_FILE_EDITOR_PLUGIN_URI.
-if (!defined('HTACCESS_FILE_EDITOR_PLUGIN_URI')) {
-    define('HTACCESS_FILE_EDITOR_PLUGIN_URI', plugins_url('', HTACCESS_FILE_EDITOR_FILE));
+if ( ! defined( 'HTACCESS_FILE_EDITOR_PLUGIN_URI' ) ) {
+	define( 'HTACCESS_FILE_EDITOR_PLUGIN_URI', plugins_url( '', HTACCESS_FILE_EDITOR_FILE ) );
 }
 
 // Define HTACCESS_FILE_EDITOR_PLUGIN_DIR.
-if (!defined('HTACCESS_FILE_EDITOR_PLUGIN_DIR')) {
-    define('HTACCESS_FILE_EDITOR_PLUGIN_DIR', plugin_dir_path(HTACCESS_FILE_EDITOR_FILE));
+if ( ! defined( 'HTACCESS_FILE_EDITOR_PLUGIN_DIR' ) ) {
+	define( 'HTACCESS_FILE_EDITOR_PLUGIN_DIR', plugin_dir_path( HTACCESS_FILE_EDITOR_FILE ) );
 }
 
 
 // Include the main Htaccess_File_Editor class.
-if (!class_exists('Htaccess_File_Editor')) {
-    include_once dirname(__FILE__) . '/includes/class-htaccess-file-editor.php';
+if ( ! class_exists( 'Htaccess_File_Editor' ) ) {
+	include_once __DIR__ . '/includes/class-htaccess-file-editor.php';
 }
 
 
@@ -70,9 +70,8 @@ if (!class_exists('Htaccess_File_Editor')) {
  * @return Htaccess_File_Editor
  * @since  1.0.0
  */
-function htaccess_file_editor()
-{
-    return Htaccess_File_Editor::instance();
+function htaccess_file_editor() {
+	return Htaccess_File_Editor::instance();
 }
 
 // Global for backwards compatibility.

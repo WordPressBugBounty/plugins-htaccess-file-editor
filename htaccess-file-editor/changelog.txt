@@ -1,3 +1,6 @@
+= 1.0.20 - 19/12/2024 =
+* Fixed: Security issue regarding htaccess backups in certain situations
+
 = 1.0.17 - 21/08/2024 =
 * Fixed: Compatibility with WordPress v6.6
 
