@@ -20,7 +20,7 @@ if ($file_name && file_exists(ABSPATH . 'wp-content/' . $file_name)) {
     <form method="post" action="<?php echo esc_url( admin_url('admin.php?page=htaccess-file-editor-backup') ); ?>">
         <?php wp_nonce_field('htaccess_file_editor_deleteb', 'htaccess_file_editor_deleteb'); ?>
         <input type="hidden" name="delete_backup" value="delete"/>
-        <p class="submit"><?php esc_html__('Do you want to delete a backup file?', 'htaccess-file-editor'); ?>
+        <p class="submit"><?php esc_html_e('Do you want to delete a backup file?', 'htaccess-file-editor'); ?>
             <input
                     type="submit" class="button button-primary" name="submit"
                     value="<?php esc_attr_e('Remove backup &raquo;', 'htaccess-file-editor'); ?>"/></p>
